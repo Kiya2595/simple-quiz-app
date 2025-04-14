@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simple Quiz App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🧠 Quiz App</h1>
+    <label class="switch">
+      <input type="checkbox" id="darkModeToggle">
+      <span class="slider round"></span>
+    </label>
+  </header>
+
+  <main>
+    <div id="quiz-box">
+      <h2 id="question">Loading question...</h2>
+      <div id="options"></div>
+      <div id="feedback"></div>
+      <button id="next-btn" class="hidden">Next</button>
+    </div>
+
+    <div id="result-box" class="hidden">
+      <h2>🎉 Quiz Completed!</h2>
+      <p>Your score: <span id="score"></span></p>
+      <button id="restart-btn">Restart</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Feven Aynalem | Quiz Project</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
